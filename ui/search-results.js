@@ -19,7 +19,6 @@ function findItems() {
 
             for(key in items) {
                 var item = items[key];
-                console.log(item.CodeTitle);
                 results += '<div class="code-summary"><h2><a href="/entry-sample.html?id=' + item.PCID + '">' + item.CodeTitle + '</a></h2>' +
                     '<p>' + (item.Description || 'No description provided') + '</p><ul class="usa-unstyled-list"><li>PMCID: <a>' + (item.PMCID || 'N/A') + '</a></li>' +
                     '<li>' + (item.Licensing || 'N/A') + ' license</li></ul></div>';

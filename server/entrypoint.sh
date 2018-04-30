@@ -16,7 +16,7 @@ done
 echo "postgres connection established"
 
 # Init postgresql db with table schema
-psql -h db -U postgres postgres < ./relational_db/schema_table1.sql
+psql -h db -U postgres postgres < ./db/pubcode_schema.sql
 
 # Start express server
 node app

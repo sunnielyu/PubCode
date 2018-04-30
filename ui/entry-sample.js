@@ -35,11 +35,11 @@ function getEntrySample() {
             document.getElementById('dependencies').innerHTML = item.Dependencies || 'N/A';
             document.getElementById('version').innerHTML = item.Version || 'N/A';
             document.getElementById('license').innerHTML = item.Licensing || 'N/A';
-            document.getElementById('github_url').innerHTML = '<a href="' + item.GitHub_URL + '"><button>Get the code</button></a>';
+            document.getElementById('url').innerHTML = '<a href="' + item.Url + '"><button>Get the code</button></a>';
             document.getElementById('keywords').innerHTML = keywords;
             document.getElementById('description').innerHTML = '<p>' + (item.Description || 'N/A') + '</p>';
-            document.getElementById('who_should_use').innerHTML = '<p>' + (item.WhoShouldUse || 'N/A') + '</p>';
-            document.getElementById('how_to_use').innerHTML = '<p>' + (item.HowToUse || 'N/A') + '</p>';
+            document.getElementById('quickStart').innerHTML = '<p>' + (item.QuickStart || 'N/A') + '</p>';
+            document.getElementById('documentation').innerHTML = '<p>' + (item.Documentation || 'N/A') + '</p>';
         }
     };
     xhr.open('GET', 'http://localhost:5000/item/' + id, true);
